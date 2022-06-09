@@ -1,0 +1,59 @@
+.history-page {
+  overflow-x: auto;
+  width: 100%;
+  height: 100vh;
+}
+
+.history-page h2,
+h4 {
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.history-page table {
+  margin: 15px 0 auto;
+  width: 100%;
+}
+
+.history-page table,
+tr,
+th,
+td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+table a {
+  color: #03a5ce;
+}
+
+.history-page img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.history-page table form button {
+  margin-left: 10px;
+}
+
+.history-page table input {
+  width: 100%;
+}
+
+.history-page table select {
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  outline: none;
+  height: 40px;
+  padding: 0 5px;
+}

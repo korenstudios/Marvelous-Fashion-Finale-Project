@@ -1,0 +1,41 @@
+.category-item-container {
+  flex: 1;
+  margin: 3px;
+  height: 70vh;
+  position: relative;
+}
+
+.category-item-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.category-item-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-item-info h1 {
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: -2px -2px 0 burlywood, 2px -2px 0 burlywood, -2px 2px 0 burlywood,
+    2px 2px 0 burlywood;
+}
+
+.category-item-info button {
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+}

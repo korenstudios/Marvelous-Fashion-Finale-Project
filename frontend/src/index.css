@@ -1,0 +1,88 @@
+/* --- Google Fonts --- */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+
+/* --- General Style --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* --- App Component ---  */
+
+@import url("./App.css");
+
+/* --- announcement Component --- */
+
+@import url("./styles/announcement.css");
+
+/* --- navbar Component --- */
+
+@import url("./styles/navbar.css");
+
+/* --- home Component --- */
+
+@import url("./styles/home.css");
+
+/* --- footer Component --- */
+
+@import url("./styles/footer.css");
+
+/* --- myProducts Component --- */
+
+@import url("./styles/myProducts.css");
+
+/* --- productItem Component --- */
+
+@import url("./styles/productItem.css");
+
+/* --- login / register / userProfile / forgotPassword / resetPassword Components --- */
+
+@import url("./styles/login_register_userProfile_forgotPassword_resetPassword.css");
+
+/* --- about Component --- */
+
+@import url("./styles/about.css");
+
+/* --- cart / wishlist Components --- */
+
+@import url("./styles/cart_wishlist.css");
+
+/* --- orderHistory / paypalOrderDetails / stripeOrderDetails / userManagement Components / userDetails --- */
+
+@import url("./styles/orderHistory_paypalOrderDetails_stripeOrderDetails_userManagement_userDetails.css");
+
+/* --- categories Component --- */
+
+@import url("./styles/categories.css");
+
+/* --- productFactory Component --- */
+
+@import url("./styles/productFactory.css");
+
+/* --- notFound Component --- */
+
+@import url("./styles/notFound.css");
+
+/* --- Responsive --- */
+
+@import url("./styles/responsive.css");

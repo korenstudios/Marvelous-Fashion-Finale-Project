@@ -1,0 +1,83 @@
+.empty-cart {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-cart h2 {
+  font-size: 3rem;
+}
+
+.cart {
+  position: relative;
+  border: 1px solid #ccc;
+  transform: scaleY(0.98);
+}
+
+.amount span {
+  color: crimson;
+  padding: 0 20px;
+}
+
+.amount button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #777;
+  font-weight: bold;
+  transition-duration: 0.2s;
+}
+
+.amount button:hover {
+  background-color: lightskyblue;
+  color: whitesmoke;
+  transition: all 0.2s ease-in-out;
+}
+
+.amount button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+  color: black;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: red;
+}
+
+.total {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total h3 {
+  color: crimson;
+}
+
+.total .payment {
+  display: flex;
+  gap: 10px;
+}
+
+.total .stripe-btn {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  margin: 0;
+}
+
+.total .stripe-btn:hover {
+  filter: brightness(90%);
+}

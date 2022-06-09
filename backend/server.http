@@ -1,0 +1,172 @@
+@local=http://localhost:5000
+
+### Register
+
+POST {{local}}/api/users
+Content-Type: application/json
+
+{
+    "name": "koren",
+    "phone": "05-0000000",
+    "email": "koren@gmail.com",
+    "password": "Koren1234!@#$",
+    "confirm_password": "Koren1234!@#$"
+}
+
+### Login
+
+POST {{local}}/api/auth
+Content-Type: application/json
+
+{
+    "email":"koren@gmail.com",
+    "password": "Koren1234!@#$"
+}
+
+### Forgot Password
+
+POST {{local}}/api/auth/forgot-password
+Content-Type: application/json
+
+{
+    "email": "koren@gmail.com"
+}
+
+#### Reset Password
+
+POST {{local}}/api/auth/reset-password
+Content-Type: application/json
+
+{
+    "password": "Koren1234!@#$",
+    "confirm_password": "Koren1234!@#$"
+}
+
+### User Info
+
+GET {{local}}/api/users/info
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+
+### Update User
+
+PUT {{local}}/api/users/profile
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+Content-Type: application/json
+
+{
+    "name": "koren",
+    "phone": "03-2222222",
+    "email": "koren@gmail.com",
+    "password": "Koren1234!@#$",
+    "confirm_password": "Koren1234!@#$"
+}
+
+### Get All Users
+GET {{local}}/api/users
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+
+### Update User Status
+
+PATCH {{local}}/api/users/status/629b8834546b274b06913cf0
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+Content-Type: application/json
+
+{
+    "isAdmin": false
+}
+
+### Delete User
+DELETE {{local}}/api/users/629a7d6c0f30f70faad0babb
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+
+### Get All Categories
+
+GET {{local}}/api/categories
+
+### Create Category
+
+POST  {{local}}/api/categories
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+Content-Type: application/json
+
+{
+    "name": "hoodies"
+}
+
+### Update Category
+
+PUT {{local}}/api/categories/629b8b4e7e29137ccffb2f42
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+Content-Type: application/json
+
+{
+"name": "hoodies updated"
+}
+
+### Delete Category
+
+DELETE {{local}}/api/categories/629b8b4e7e29137ccffb2f42
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+
+### Upload Images --> Recommend use Postman 
+
+### Upload Image
+
+POST {{local}}/api/files/upload
+
+### Delete Image
+
+POST {{local}}/api/files/destroy
+Content-Type: application/json
+
+{
+    "public_id": "test/tavkdkulqvvd3rsimsad"
+}
+
+### Get All Products
+
+GET {{local}}/api/products
+
+### Create Product
+
+POST {{local}}/api/products
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+Content-Type: application/json
+
+
+{
+    "product_id": "100",
+    "title": "Sony Playstation 4",
+    "price": 580,
+    "description": "Sony Playstation 4",
+    "content": "Sony Playstation 4",
+    "image": {
+    "public_id": "test/hsr5qpffatndui6lpdee",
+    "url": "https://res.cloudinary.com/korenstudios/image/upload/v1651518073/test/hsr5qpffatndui6lpdee.jpg"
+    },
+    "category": "4"
+}
+
+### Update Product
+
+PUT {{local}}/api/products/629b8bcb7e29137ccffb2f54
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI
+Content-Type: application/json
+
+{
+    "product_id": "100",
+    "title": "Sony Playstation 4 updated",
+    "price": 800,
+    "description": "Sony Playstation 4 updated",
+    "content": "Sony Playstation 4 updated",
+    "image": {
+    "public_id": "test/hsr5qpffatndui6lpdee",
+    "url": "https://res.cloudinary.com/korenstudios/image/upload/v1651518073/test/hsr5qpffatndui6lpdee.jpg"
+    },
+    "category": "4"
+}
+
+### Delete Product
+
+DELETE {{local}}/api/products/629b8bcb7e29137ccffb2f54
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlhODZiZGFhYzhjYTBlOWJiMmVmYTQiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTQzNjA3Mzl9.TEcpEvMNQqnHwJ1Pru25T_aVYl2yH6V6hOwBB-xoiAI

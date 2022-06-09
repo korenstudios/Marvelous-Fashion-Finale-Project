@@ -1,0 +1,304 @@
+@media (max-width: 1400px) {
+  header .logo img {
+    height: 35px;
+  }
+
+  header .logo img:hover {
+    animation: none;
+  }
+
+  header ul li {
+    font-size: 0.7rem;
+  }
+
+  .cart-anime:hover {
+    animation: none;
+  }
+
+  .wishlist-anime:hover {
+    animation: none;
+  }
+
+  .left-side img:hover {
+    animation: none;
+  }
+
+  .history-page table input {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 920px) {
+  header ul li {
+    font-size: 0.6rem;
+  }
+
+  .slider-container {
+    display: none;
+  }
+
+  .categories-display-container {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .intro-container {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .wrapper-intro:hover img {
+    transform: scale(1.12);
+  }
+
+  .wrapper-intro .intro-title h2 {
+    font-size: 2rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 820px) {
+  header .logo {
+    min-width: 115px;
+    flex: none;
+  }
+
+  header ul {
+    padding: 10px 0;
+  }
+
+  .center-side {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  header ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.98;
+    z-index: 99;
+    transition: 0.5s ease-in;
+  }
+
+  header ul li {
+    font-size: 1rem;
+  }
+
+  header .menu {
+    display: block !important;
+    cursor: pointer;
+  }
+
+  header ul li .menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 570px) {
+  header .logo img {
+    height: 55px;
+  }
+
+  .filter-menu .row span {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .newsletter-container .description {
+    text-align: center;
+  }
+
+  .newsletter-container .form-container {
+    width: 80%;
+  }
+
+  .wrapper-intro .intro-title h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .App {
+    padding: 0 10px;
+  }
+
+  .item {
+    font-size: 100%;
+    padding: 0;
+  }
+
+  .filter-menu input {
+    margin: 0;
+  }
+
+  .filter-menu .sort {
+    flex: 1;
+  }
+
+  .filter-menu .sort select {
+    width: 100%;
+    min-width: 290px;
+    margin: 5px 0;
+  }
+
+  .login-page {
+    padding: 30px 15px;
+  }
+
+  .login-page form .social-media-wrapper {
+    flex-direction: column;
+  }
+
+  .delete-all {
+    margin: 20px 0;
+  }
+
+  .create-product .upload {
+    margin: 20px 0;
+  }
+
+  .total {
+    margin-top: 10px;
+  }
+
+  .total .payment {
+    flex-direction: column;
+  }
+
+  .not-found-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .not-found-container h1,
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .right-side {
+    background-color: #fff8f8;
+  }
+
+  .category-item-container img {
+    height: 35vh;
+  }
+
+  .category-item-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  header .logo img {
+    height: 35px;
+  }
+
+  .newsletter-container h1 {
+    font-size: 45px;
+  }
+
+  .newsletter-container .description {
+    font-size: 12px;
+  }
+
+  .newsletter-container .form-container input {
+    padding-left: 0;
+  }
+
+  .right-side .contact-item {
+    font-size: 12px;
+  }
+
+  .announcement-container {
+    font-size: 10px;
+  }
+
+  .filter-menu {
+    gap: 5px;
+  }
+
+  .filter-menu .sort select {
+    min-width: 260px;
+  }
+
+  .delete-all button {
+    padding: 10px 15px;
+  }
+
+  .products {
+    display: block;
+  }
+
+  .product-factory form {
+    min-width: 250px;
+  }
+
+  .categories input {
+    width: 160px;
+  }
+
+  .categories button {
+    width: 50px;
+  }
+
+  .categories .row {
+    min-width: 250px;
+  }
+
+  .wrapper-intro .intro-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-description h3 {
+    font-size: 1rem;
+  }
+
+  .about-description h5 {
+    font-size: 0.8rem;
+  }
+
+  .wrapper-intro .intro-title h2 {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .empty-cart h2 {
+    font-size: 2rem;
+  }
+
+  .login-page form h2 + p {
+    font-size: 0.8rem;
+  }
+
+  .login-page form .useful-row p {
+    font-size: 0.8rem;
+  }
+
+  .not-found-container h1,
+  h2,
+  p,
+  a {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,93 @@
+.slider-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container .arrow-left,
+.slider-container .arrow-right {
+  width: 50px;
+  height: 50px;
+  background-color: #fff7f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 2;
+  transition-duration: 0.2s;
+}
+
+.slider-container .arrow-left:hover,
+.slider-container .arrow-right:hover {
+  background-color: mintcream;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.slider-container .arrow-left {
+  left: 10px;
+}
+
+.slider-container .arrow-right {
+  right: 10px;
+}
+
+.slider-container .slider-items-wrapper {
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease;
+}
+
+.slider-container .slider-items-wrapper .slide-item {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.slider-items-wrapper .slide-item .info-container {
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+}
+
+.slider-items-wrapper .slide-item .info-container h1 {
+  font-size: 70px;
+  font-family: "Spicy Rice", cursive;
+  color: white;
+  text-transform: capitalize;
+}
+
+.slider-items-wrapper .slide-item .info-container p {
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.slider-items-wrapper .slide-item .info-container button {
+  padding: 10px;
+  height: 65px;
+  font-size: 2.5rem;
+  border: 2px solid #b12929;
+  color: #b12929;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.slider-items-wrapper .slide-item .info-container button:hover {
+  background-color: #b12929;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
